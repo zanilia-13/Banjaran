@@ -32,22 +32,22 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: XL-Conference
-  server: support.zoom.us
-  port: 443
-  type: vmess
-  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: support.zoom.us.id-neva001.beritanect.click
-  network: ws
-  ws-opts:
-    path: /xrayvmess
-    headers:
-      Host: support.zoom.us.id-neva001.beritanect.click
-  udp: true
+  - name: XL-Conference
+    server: support.zoom.us
+    port: 443
+    type: vmess
+    uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: support.zoom.us.id-neva001.beritanect.click
+    network: ws
+    ws-opts:
+      path: /xrayvmess
+      headers:
+        Host: support.zoom.us.id-neva001.beritanect.click
+    udp: true
 proxy-groups:
   - name: XL-AXIS
     type: select
