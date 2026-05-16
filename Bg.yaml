@@ -34,9 +34,9 @@ dns:
 proxies:
   - name: XL-Conference 
     server: support.zoom.us
-    port: 80
+    port: 443
     type: vmess
-    uuid: 90b7f668-1915 -5e80-8eae-1e7f8ec3adc8
+    uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
     alterId: 0
     cipher: auto
     tls: true
@@ -49,10 +49,10 @@ proxies:
         Host: support.zoom.us.id-neva001.beritanect.click
     udp: true
 proxy-groups:
-  - name: FASTSSH-SSHKIT-HOWDY
+  - name: XL-AXIS
     type: select
     proxies:
       - XL-Conference 
       - DIRECT
 rules:
-  - MATCH,FASTSSH-SSHKIT-HOWDY
+  - MATCH,XL-AXIS
