@@ -1,58 +1,116 @@
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-tproxy-port: 7895
-ipv6: false
-mode: rule
-log-level: silent
-allow-lan: true
-external-controller: 0.0.0.0:9090
-secret: ""
-bind-address: "*"
-unified-delay: true
-profile:
-  store-selected: true
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
-  nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
-    - https://dns.google/dns-query
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-    - https://cloudflare-dns.com/dns-query
-    - 112.215.203.254
-  default-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-    - 112.215.203.254
 proxies:
-  - name: XLConference
-    server: support.zoom.us
-    port: 443
-    type: vmess
-    uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: support.zoom.us.id-neva001.beritanect.click
-    network: ws
-    ws-opts:
-      path: /xrayvmess
-      headers:
-        Host: support.zoom.us.id-neva001.beritanect.click
-    udp: true
-proxy-groups:
-  - name: XL-AXIS
-    type: select
-    proxies:
-      - XLConference 
-      - DIRECT
-rules:
-  - MATCH,XL-AXIS
+- name: VMESSVIDIO
+  server: quiz.int.vidio.com
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-neva001.beritanect.click
+  udp: true
+
+- name: VMESSsushiroll
+  server: www.sushiroll.co.id
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-neva001.beritanect.click 
+  udp: true
+
+- name: VMESSZOOM
+  server: support.zoom.us
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: support.zoom.us.id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: support.zoom.us.id-neva001.beritanect.click
+  udp: true
+
+- name: VMESSSPOTIFY
+  server: investors.spotify.com
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: investors.spotify.com.id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: investors.spotify.com.id-neva001.beritanect.click
+  udp: true
+
+- name: VMESSCATCHPLAY
+  server: support-id.catchplay.com
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-neva001.beritanect.click
+  udp: true
+
+- name: Cakbizz Trojan
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: aa600ea4-73eb-482e-a4e5-1882f1a6ecd8
+  skip-cert-verify: true
+  sni: support.zoom.us.cak.biz.id
+  network: ws
+  ws-opts:
+    path: /129.150.58.86-57621
+    headers:
+      Host: support.zoom.us.cak.biz.id
+  udp: true
+
+- name: VMESSWhatsaap 
+  server: listen.noice.id
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-neva001.beritanect.click 
+  udp: true 
