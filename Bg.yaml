@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: XL-Conference
+  - name: XLConference
   server: support.zoom.us
   port: 443
   type: vmess
@@ -52,7 +52,7 @@ proxy-groups:
   - name: XL-AXIS
     type: select
     proxies:
-      - XL-Conference
+      - XLConference
       - DIRECT
 rules:
   - MATCH,XL-AXIS
