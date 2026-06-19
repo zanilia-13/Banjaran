@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
 - name: TELKOMSEL-ILPED 
-  server: 1img-video-tracking-th.ruangguru.com
+  server: 172.66.152.99
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
