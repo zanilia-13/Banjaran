@@ -52,7 +52,6 @@ proxy-groups:
   - name: TELKOMSEL 
     type: select
     proxies:
-      - TELKOMSEL-ILPED 
-      - DIRECT
+      - TELKOMSEL-ILPED
 rules:
-  - MATCH, TELKOMSEL 
+  - MATCH,TELKOMSEL 
