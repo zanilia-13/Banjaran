@@ -32,8 +32,8 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: TELKOMSEL-ILPED 
-  server: 172.66.152.99
+- name: XL-IFLIX
+  server: live.wetv.vip
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
@@ -49,9 +49,9 @@ proxies:
       Host: id-neva001.beritanect.click
   udp: true
 proxy-groups:
-  - name: TELKOMSEL 
+  - name: XL
     type: select
     proxies:
-      - TELKOMSEL-ILPED
+      - XL-IFLIX
 rules:
-  - MATCH,TELKOMSEL 
+  - MATCH,XL
