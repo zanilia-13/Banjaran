@@ -2,7 +2,7 @@ proxy-providers:
   vpn-dari-github:
     type: http
     url: https://raw.githubusercontent.com/zanilia-13/Banjaran/refs/heads/main/Akun-Server.yaml
-    path: ./proxies/Akun-Server.yaml
+    path: ./proxies
     interval: 3600
     health-check:
       enable: true
