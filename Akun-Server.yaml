@@ -1,6 +1,6 @@
 proxies:
-- name: TELKOMSEL ILPED 
-  server: 104.18.25.139
+- name: XL IFLIX
+  server: live.iflix.com
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
