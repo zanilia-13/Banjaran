@@ -47,6 +47,7 @@ proxies:
     path: /xrayvmess
     headers:
       Host: id-tencent001.gosni.web.id
+  udp: true
 
       name: XL-CONFERENCE
   server: support.zoom.us
@@ -63,6 +64,7 @@ proxies:
     path: /xrayvmess
     headers:
       Host: support.zoom.us.id-tencent001.gosni.web.id
+ udp: true
 
       name: XL-SPOTIFY
   server: investors.spotify.com
@@ -81,8 +83,6 @@ proxies:
       Host: investors.spotify.com.id-tencent001.gosni.web.id 
   udp: true
   
-  udp: true
-  udp: true
 proxy-groups:
   - name: XL
     type: select
