@@ -49,7 +49,7 @@ proxies:
       Host: id-tencent001.gosni.web.id
   udp: true
 
-      name: XL-CONFERENCE
+- name: XL-CONFERENCE
   server: support.zoom.us
   port: 443
   type: vmess
@@ -66,7 +66,7 @@ proxies:
       Host: support.zoom.us.id-tencent001.gosni.web.id
  udp: true
 
-      name: XL-SPOTIFY
+- name: XL-SPOTIFY
   server: investors.spotify.com
   port: 443
   type: vmess
