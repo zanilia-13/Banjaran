@@ -58,13 +58,13 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: support.zoom.us.id-tencent001.gosni.web.id
+  servername: support.zoom.us.id-neva001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: support.zoom.us.id-tencent001.gosni.web.id
- udp: true
+      Host: support.zoom.us.id-neva001.beritanect.click
+  udp: true
 
 - name: XL-SPOTIFY
   server: investors.spotify.com
