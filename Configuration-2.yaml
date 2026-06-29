@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
 - name: XL-IFLIX
-  server: live.wetv.vip
+  server: id-tencent001.gosni.web.id
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
@@ -41,17 +41,54 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-neva001.beritanect.click
+  servername: live.iflix.com
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-neva001.beritanect.click
+      Host: id-tencent001.gosni.web.id
+
+      name: XL-CONFERENCE
+  server: support.zoom.us
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: support.zoom.us.id-tencent001.gosni.web.id
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: support.zoom.us.id-tencent001.gosni.web.id
+
+      name: XL-SPOTIFY
+  server: investors.spotify.com
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: investors.spotify.com.id-tencent001.gosni.web.id
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: investors.spotify.com.id-tencent001.gosni.web.id 
+  udp: true
+  
+  udp: true
   udp: true
 proxy-groups:
   - name: XL
     type: select
     proxies:
       - XL-IFLIX
+      - XL-CONFERENCE
+      - XL-SPOTIFY
 rules:
   - MATCH,XL
