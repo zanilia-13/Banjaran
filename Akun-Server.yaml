@@ -13,7 +13,7 @@ proxies:
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-neva001.beritanect.click
+      Host: id-tencent001.gosni.web.id
   udp: true
 
 - name: XL CONFERENCE
