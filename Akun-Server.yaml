@@ -100,3 +100,20 @@ proxies:
     headers:
       Host: id-tencent001.gosni.web.id
   udp: true
+  
+- name: Tsel Ilped 
+  server: 104.18.9.196
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-tencent001.gosni.web.id
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-tencent001.gosni.web.id
+  udp: true
