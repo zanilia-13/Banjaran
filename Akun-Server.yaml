@@ -100,8 +100,8 @@ proxies:
     headers:
       Host: id-tencent001.gosni.web.id
   udp: true
-  
-- name: Tsel Ilped 
+
+- name: tsel iped prib
   server: 104.18.9.196
   port: 443
   type: vmess
@@ -116,4 +116,21 @@ proxies:
     path: /xrayvmess
     headers:
       Host: id-tencent001.gosni.web.id
+  udp: true
+
+- name: tsel iped qui
+  server: api.quipper.com
+  port: 443
+  type: vmess
+  uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id-neva001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /xrayvmess
+    headers:
+      Host: id-neva001.beritanect.click
   udp: true
