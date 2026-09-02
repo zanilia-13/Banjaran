@@ -101,7 +101,7 @@ proxies:
       Host: id-tencent001.gosni.web.id
   udp: true
 
-- name: tsel iped prib
+- name: tsel iped Tencent 
   server: 104.18.9.196
   port: 443
   type: vmess
@@ -118,8 +118,8 @@ proxies:
       Host: id-tencent001.gosni.web.id
   udp: true
 
-- name: tsel iped qui
-  server: id-tencent001.gosni.web.id
+- name: tsel iped neva
+  server: 104.18.9.196
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
@@ -127,10 +127,10 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: classroom.google.com
+  servername: id-neva001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-tencent001.gosni.web.id
+      Host: id-neva001.beritanect.click
   udp: true
