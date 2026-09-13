@@ -1,6 +1,6 @@
 proxies:
 - name: XL IFLIX
-  server: id-tencent001.gosni.web.id
+  server: id-awandata001.gosni.web.id
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
@@ -13,7 +13,7 @@ proxies:
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-tencent001.gosni.web.id
+      Host: id-awandata001.gosni.web.id
   udp: true
 
 - name: XL CONFERENCE
@@ -25,16 +25,16 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: support.zoom.us.id-neva001.beritanect.click
+  servername: support.zoom.us.id-awandata001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: support.zoom.us.id-neva001.beritanect.click
+      Host: support.zoom.us.id-awandata001.beritanect.click
   udp: true
   
 - name: WhatsApp 
-  server: id-tencent001.gosni.web.id
+  server: id-awandata001.gosni.web.id
   port: 443
   type: vmess
   uuid: 90b7f668-1915-5e80-8eae-1e7f8ec3adc8
@@ -47,7 +47,7 @@ proxies:
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-tencent001.gosni.web.id
+      Host: id-awandata001.gosni.web.id
   udp: true
 
 - name: XL/AXIS MUSIK
@@ -59,12 +59,12 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: investors.spotify.com.id-neva001.beritanect.click
+  servername: investors.spotify.com.id-awandata001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: investors.spotify.com.id-neva001.beritanect.click
+      Host: investors.spotify.com.id-awandata001.beritanect.click
   udp: true
 
 - name: XL/AXIS CATCHPLAY
@@ -76,12 +76,12 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-neva001.beritanect.click
+  servername: id-awandata001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-neva001.beritanect.click
+      Host: id-awandata001.beritanect.click
   udp: true
   
 - name: Tsel GameMax
@@ -93,15 +93,15 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-tencent001.gosni.web.id
+  servername: id-awandata001.gosni.web.id
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-tencent001.gosni.web.id
+      Host: id-awandata001.gosni.web.id
   udp: true
 
-- name: tsel iped Tencent 
+- name: tsel iped gosni
   server: 104.18.9.196
   port: 443
   type: vmess
@@ -110,15 +110,15 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-tencent001.gosni.web.id
+  servername: id-awandata001.gosni.web.id
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-tencent001.gosni.web.id
+      Host: id-awandata001.gosni.web.id
   udp: true
 
-- name: tsel iped neva
+- name: tsel iped berita
   server: 104.18.9.196
   port: 443
   type: vmess
@@ -127,10 +127,10 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-neva001.beritanect.click
+  servername: id-awandata001.beritanect.click
   network: ws
   ws-opts:
     path: /xrayvmess
     headers:
-      Host: id-neva001.beritanect.click
+      Host: id-awandata001.beritanect.click
   udp: true
